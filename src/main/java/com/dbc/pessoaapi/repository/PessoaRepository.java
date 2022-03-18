@@ -9,6 +9,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.Collectors;
 
 @Repository
 public class PessoaRepository {
@@ -65,6 +66,6 @@ public class PessoaRepository {
     public List<Pessoa> listByName(String nome){
         return listaPessoas.stream()
                 .filter(p -> p.getNome().contains(nome))
-                .toList();
+                .collect(Collectors.toList());
     }
 }
