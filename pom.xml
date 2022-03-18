@@ -13,9 +13,9 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>pessoaapi</name>
 	<description>Projeto teste aula2 modulo3</description>
-	<properties>
+	<!--<properties>
 		<java.version>17</java.version>
-	</properties>
+	</properties>-->
 	<dependencies>
 		<dependency><!-- springao -->
 			<groupId>org.springframework.boot</groupId>
